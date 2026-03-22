@@ -1,0 +1,1 @@
+import{W as r,R as a}from"./index-mubkD2_k.js";const s=r(a.create({baseURL:"https://avatars.axas.ru/api/v1"}));s.interceptors.request.use(e=>{const t=localStorage.getItem("token");return t&&(e.headers.Authorization=`Bearer ${t}`),e},e=>Promise.reject(e));export{s as c};

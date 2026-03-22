@@ -1,0 +1,202 @@
+/* MARK INPUT TF | SELECT */
+.custom-tf>.v-input__control>.v-field {
+  border-radius: 4px;
+  border: none;
+  background-color: var(--back-color);
+  height: 36px;
+}
+
+.custom-tf>.v-input__append {
+  border-radius: 4px;
+  padding: 12px 4px 8px 4px !important;
+  height: 36px;
+  border: none;
+  margin: 0 0 0 8px;
+}
+
+.custom-tf>.v-input__control>.v-field>.v-field__field {
+  background-color: var(--back-color);
+  height: 36px;
+  border: none;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.custom-tf>.v-input__control>.v-field>.v-field__field>.v-field__input {
+  padding: 0 16px;
+  min-height: 36px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+}
+
+.custom-tf>.v-input__control>.v-field>.v-field__append-inner {
+  background-color: var(--back-color);
+  padding: 8PX;
+  min-height: 36px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+}
+
+
+.small-custom-tf>.v-input__control>.v-field {
+  border-radius: 4px;
+  border: none;
+  background-color: var(--back-color);
+}
+
+.small-custom-tf>.v-input__append {
+  border-radius: 4px;
+  padding: 12px 4px 8px 4px !important;
+  height: 36px;
+  border: none;
+  margin: 0 0 0 8px;
+}
+
+.small-custom-tf>.v-input__control>.v-field>.v-field__field {
+  background-color: var(--back-color);
+  height: 36px;
+  border: none;
+  border-radius: 4px;
+  overflow: hidden;
+  padding: 0 10px;
+}
+
+.small-custom-tf>.v-input__control>.v-field>.v-field__field>.v-field-label {
+  font-size: 14px;
+}
+
+.small-custom-tf>.v-input__control>.v-field>.v-field__field>.v-field__input {
+  padding: 0px;
+  min-height: 36px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+}
+
+.small-custom-tf>.v-input__control>.v-field>.v-field__field>.v-field__input>input {
+
+  font-size: 14px;
+}
+
+.small-custom-tf>.v-input__control>.v-field>.v-field__append-inner {
+  background-color: var(--back-color);
+  padding: 12px 8PX;
+  min-height: 36px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+}
+
+.custom-textarea>.v-input__control>.v-field>.v-field__field {
+  background-color: var(--back-color);
+  padding: 0px 1px;
+  min-height: 36px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+}
+
+.custom-textarea>.v-input__control>.v-field>.v-field__field>.v-field__input {
+  background-color: var(--back-color);
+  padding: 12px 8PX;
+  min-height: 36px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  mask-image: none;
+  -webkit-mask-image: none;
+}
+
+
+
+.small-select>.v-input__control {
+  height: 36px;
+  border-radius: 4px;
+  border: none;
+  background-color: var(--back-color);
+  margin-bottom: 4px;
+}
+
+.small-select>.v-input__append {
+  border-radius: 4px;
+  height: 36px;
+  border: none;
+  margin: 0 0 0 8px;
+}
+
+.small-select>.v-input__control>.v-field>.v-field__field {
+  background-color: var(--back-color);
+  height: 36px;
+  border: none;
+  border-radius: 4px;
+  overflow: hidden;
+  padding: 0px;
+}
+
+
+.small-select>.v-input__control>.v-field>.v-field__field>.v-label {
+  padding: 0 8px;
+  font-size: 14px;
+}
+
+.small-select>.v-input__control>.v-field>.v-field__field>.v-field__input>.v-select__selection>.v-list-item {
+  padding: 0 7px;
+  min-height: 36px;
+}
+
+.small-select>.v-input__control>.v-field>.v-field__field>.v-field__input>.v-select__selection>.v-list-item>.v-list-item__content>.v-list-item-title {
+  font-size: 14px;
+}
+
+.custom-tf>.v-input__control>.v-field>.v-field__field>.v-field__input>.v-select__selection>.v-select__selection-text {
+  /* font-size: 14px !important; */
+  padding-left: 8px !important;
+}
+
+.small-select>.v-input__control>.v-field>.v-field__field>.v-field__input>.v-select__selection>.v-select__selection-text {
+  font-size: 14px;
+  padding-left: 8px;
+}
+
+.small-select>.v-input__control>.v-field>.v-field__field>.v-field__input {
+  padding: 0px;
+  min-height: 36px;
+}
+
+.small-select>.v-input__control>.v-field>.v-field__field>.v-field__input>input {
+  padding: 8px;
+  font-size: 14px;
+}
+
+.small-select>.v-input__control>.v-field>.v-field__append-inner {
+  padding: 8px 8px;
+  min-height: 36px;
+  font-size: 14px;
+}
+
+.small-checkbox {
+  font-size: 14px;
+}
+
+.small-checkbox>.v-label {
+  font-size: 14px;
+}
+
+
+/* CHECKBOX  */
+.v-checkbox-btn>.v-label {
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.425;
+  letter-spacing: 0.0178571429em;
+}
+
+
+
+/* NAVIGATION */
+nav>ul>li>button {
+  width: 36px !important;
+  height: 36px !important;
+}

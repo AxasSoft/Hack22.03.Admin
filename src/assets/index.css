@@ -1,0 +1,301 @@
+@import './customInputs.css';
+
+/* color palette from <https://github.com/vuejs/theme> */
+:root {
+  --vt-c-white: #ffffff;
+  --vt-c-white-soft: #f3f5f9;
+  --vt-c-white-mute: #f2f2f2;
+
+  --vt-c-black: #181818;
+  --vt-c-black-soft: #222222;
+  --vt-c-black-mute: #1c1c1e76;
+
+  --vt-c-indigo: #2c3e50;
+
+  font-family: 'Inter', sans-serif;
+
+  --vt-c-divider-light-1: rgba(60, 60, 60, 0.29);
+  --vt-c-divider-light-2: rgba(60, 60, 60, 0.12);
+  --vt-c-divider-dark-1: rgba(84, 84, 84, 0.65);
+  --vt-c-divider-dark-2: rgba(84, 84, 84, 0.48);
+
+  --vt-c-text-light-1: var(--vt-c-black);
+  --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
+  --vt-c-text-dark-1: var(--vt-c-white);
+  --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
+
+
+  /* }
+
+/* semantic color variables for this project 
+:root { */
+  --color-background: var(--vt-c-white);
+  --color-background-soft: var(--vt-c-white-soft);
+  --color-background-mute: var(--vt-c-white-mute);
+
+  --color-border: var(--vt-c-divider-light-2);
+  --color-border-hover: var(--vt-c-divider-light-1);
+
+  --color-heading: var(--vt-c-text-light-1);
+  --color-text: var(--vt-c-black);
+  --gray-text: var(--vt-c-black-mute);
+
+  --section-gap: 160px;
+
+  --main-color: #32afc0;
+  --back-color: #f3f5f9;
+  --back-color-50: #f3f5f98b;
+  --main-color-grey: #F2F5F7;
+  --loose-color: #FDDFE1;
+  --gray-text: #888888;
+  --text-color: #181818;
+  --light-gray-text: #9D9EA1;
+  --border-color: #00000016;
+  --gradient-violet: linear-gradient(to right, #9a3af9, rgb(80, 45, 255));
+
+
+  --order-new-color: rgb(50, 175, 192);
+  --order-new-back-color: rgba(50, 175, 192, 0.1);
+
+  --order-processing-color: rgba(28, 28, 30, 0.4);
+  --order-processing-back-color: rgba(28, 28, 30, 0.08);
+
+  --order-packing-color: rgba(28, 28, 30, 0.4);
+  --order-packing-back-color: rgba(28, 28, 30, 0.08);
+
+  --order-delivering-color: rgba(255, 181, 11, 1);
+  --order-delivering-back-color: rgba(255, 181, 11, 0.08);
+
+  --order-delivered-color: rgba(7, 180, 255, 1);
+  --order-delivered-back-color: rgba(7, 180, 255, 0.08);
+
+  --order-finished-color: #1FA020;
+  --order-finished-back-color: rgba(31, 160, 32, 0.08);
+
+  --order-canceled-color: #D22121;
+  --order-canceled-back-color: rgba(236, 55, 81, 0.08);
+
+
+  --active-color: #1FA020;
+  --active-back-color: #EDF7ED;
+
+  --alert-color: #D22121;
+  --alert-back-color: #FDEFF1;
+}
+
+
+@font-face {
+  font-family: "Inter";
+  src: url("./Inter_18pt-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("./Inter_18pt-Medium.ttf") format("truetype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("./Inter_18pt-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --color-background: var(--vt-c-white);
+    --color-background-soft: var(--vt-c-white-soft);
+    --color-background-mute: var(--vt-c-white-mute);
+
+    --color-border: var(--vt-c-divider-dark-2);
+    --color-border-hover: var(--vt-c-divider-dark-1);
+
+    --color-heading: var(--vt-c-text-dark-1);
+    --color-text: var(--vt-c-black);
+  }
+}
+
+
+@media (color-scheme: dark) {
+  :root {
+    --color-background: var(--vt-c-white);
+    --color-background-soft: var(--vt-c-white-soft);
+    --color-background-mute: var(--vt-c-white-mute);
+
+    --color-border: var(--vt-c-divider-dark-2);
+    --color-border-hover: var(--vt-c-divider-dark-1);
+
+    --color-heading: var(--vt-c-text-dark-1);
+    --color-text: var(--vt-c-black);
+  }
+}
+
+.accent-btn {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  background-color: var(--main-color);
+  color: white !important;
+  background-color: var(--main-color);
+}
+
+.empty-layout {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100vh;
+  background: var(--vt-c-white-soft);
+}
+
+.axas-modal {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* z-index: 99; */
+  display: flex;
+  align-items: center;
+}
+
+.accent-text {
+  color: var(--main-color);
+}
+
+.red-hint {
+  margin: 0;
+  padding: 0;
+  color: #f44336;
+}
+
+.link {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.627);
+  margin: 50px 0;
+}
+
+.title {
+  color: var(--color-text);
+  font-size: 24px;
+}
+
+.gray-text {
+  color: var(--vt-c-black-mute);
+}
+
+.black-button {
+  width: 240px;
+  background-color: var(--color-text);
+  color: white;
+  text-transform: none;
+}
+
+.background-button {
+  width: 240px;
+  background-color: var(--back-color);
+  color: rgb(0, 0, 0);
+  text-transform: none;
+}
+
+.gray-button {
+  width: 240px;
+  background-color: var(--gray-text);
+  color: white;
+  text-transform: none;
+}
+
+.gradient-button {
+  width: 240px;
+  background: linear-gradient(to right, #9a3af9, rgb(80, 45, 255));
+  color: white;
+  text-transform: none;
+}
+
+.alert-button {
+  width: 240px;
+  background-color: white;
+  color: var(--alert-color);
+}
+
+
+
+.selected-item {
+  background-color: white;
+  color: var(--color-text);
+  color: black !important;
+  border-radius: 10px 10px 0 0 !important;
+}
+
+.v-tab:hover {
+  border-radius: 10px 10px 0 0 !important;
+}
+
+.v-tab {
+  text-transform: none !important;
+}
+
+
+
+.table-head {
+  background-color: var(--back-color) !important;
+  color: var(--light-gray-text);
+  border-bottom: 1px solid var(--border-color);
+  z-index: 99999;
+}
+
+.table-subhead>tr>td {
+  height: 30px !important;
+  color: var(--gray-text);
+  border-bottom: 1px solid #00000016;
+}
+
+.sidebar {
+  -webkit-box-shadow: -7px 0px 12px 0px rgba(82, 127, 163, 0.199) !important;
+  -moz-box-shadow: -7px 0px 12px 0px rgba(82, 127, 163, 0.199) !important;
+  box-shadow: -7px 0px 12px 0px rgba(82, 127, 163, 0.199) !important;
+  background-color: white !important;
+}
+
+.sidebar-header {
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  z-index: 500;
+  justify-content: center;
+  vertical-align: baseline;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.sidebar-content {
+  height: calc(100% - 70px);
+  margin-top: 70px;
+}
+
+.sidebar-close {
+  background-color: white;
+  border: 1px solid var(--back-color);
+  width: 30px;
+  min-width: 30px;
+  border-radius: 50%;
+  padding: 0;
+  height: 30px;
+  position: absolute;
+  left: -15px;
+}
+
+.sidebar>.p-drawer-header {
+  display: none;
+}
+
+
+.hint {
+  display: flex;
+  flex-direction: column;
+  margin: 100px auto auto;
+  align-items: center;
+}

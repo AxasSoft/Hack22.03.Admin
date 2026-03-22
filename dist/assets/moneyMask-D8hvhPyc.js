@@ -1,0 +1,1 @@
+const n=t=>{if(t!=0)t=Math.floor(t/100);else return"0";const r=t.toString().replace(".","").replace(",","").replace(/\D/g,""),e={minimumFractionDigits:0};return new Intl.NumberFormat("ru-RU",e).format(parseFloat(r))};export{n as m};
